@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (Utils.isNetworkAvailable(MainActivity.this)) {
                     comicNo = editTextComicNo.getText().toString();
+                    getComic(comicNo);
                 }
             }
         });
